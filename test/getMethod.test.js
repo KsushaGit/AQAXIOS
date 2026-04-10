@@ -28,7 +28,7 @@ describe ('JSONPlaceholder API/comments',()=> {
 
 describe ('JSONPlaceholder API/photos',()=> {
 test ('Get /albums', async() => {
-    const response =await getAllPhotos();
+    const response = await getAllPhotos();
 
     expect (response.data[0]).toHaveProperty('title')
     expect(response.data[3].url).toContain('https')
