@@ -4,21 +4,10 @@
 
 import { apiClient } from '../utils/axiosinstance.js';
 
-const getAllPosts = () => apiClient.get('/posts');
-const getPostById =(id) => apiClient.get('/posts/${id}');
-const createPost =(body) => apiClient.post('/posts', body);
-const createComment = (body) => apiClient.post('/comments', body);
-const getAllComments = () => apiClient.get('comments');
-const getAllPhotos =() => apiClient.get ('/photos');
-const createPhotos =(body) =>apiClient.post ('photos',body)
-
-export {
-
-    getAllPosts,
-    getPostById,
-    createComment,
-    getAllComments,
-    getAllPhotos,
-    createPost,
-    createPhotos 
-}
+export const getAllPosts = () => apiClient.get('/posts');
+export const getPostById =(id) => apiClient.get('/posts/${id}');
+export const createPost =(body) => apiClient.post('/posts', body);
+export const createComment = (body) => apiClient.post('/comments', body);
+export const getAllComments = () => apiClient.get('comments');
+export const getAllPhotos =() => apiClient.get ('/photos');
+export const createPhotos =(body) =>apiClient.post ('photos',body);
